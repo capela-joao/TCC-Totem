@@ -1,15 +1,16 @@
 import React from 'react';
-import SignIn from './pages/SignIn/index.js';
-import SignUp from "./pages/SignUp/index.js";
-import GlobalStyle from './styles/global';
+import Routes from './routes/index.js';
+import { BrowserRouter } from 'react-router-dom';
+import GlobalStyle from './styles/global.js';
 
 function App() {
-
   return (
-    <div className="App">
-      <SignIn/>
+    <>
+      <BrowserRouter>
+        <Routes/>
+      </BrowserRouter>
       <GlobalStyle/>
-    </div>
+    </>
   );
 }
 

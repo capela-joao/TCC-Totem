@@ -1,6 +1,6 @@
 import React, { useRef, useCallback } from 'react';
 import { Container, Content, ContentLogin, Background } from './styles'
-import { FiLogIn, FiMail, FiLock } from 'react-icons/fi'
+import { FiMail, FiLock } from 'react-icons/fi'
 import Input from '../../components/input'
 import Button from '../../components/button'
 import { Form } from '@unform/web';
