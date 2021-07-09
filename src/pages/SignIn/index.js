@@ -57,7 +57,7 @@ export default function SignIn() {
 
               <Button type="submit">Entrar</Button>
 
-              <a href="Login">Esqueci minha senha</a>
+              <a href="/home">Esqueci minha senha</a>
             </Form>
 
             {/* <a href="cadastro">

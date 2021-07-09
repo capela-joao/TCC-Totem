@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import background from '../../assets/ifsplogo.jpg'
 import {shade} from 'polished';
 
 export const Container = styled.button`

@@ -1,17 +1,20 @@
 import React from 'react';
-import { Container, Content } from './styles';
+import { Container, Content, ContentCategories, Background } from './styles';
 import Button from '../../components/button'
 
 export default function Categories () {
     return (
         <Container>
             <Content>
-                <h1>Escolha sua categoria</h1>
+                <ContentCategories>
+                    <h1>Escolha sua categoria</h1>
 
-                <Button>Acadêmico</Button>
-                <Button>Visitante</Button>
-                <Button>Cantina</Button>
+                    <a href="/login">Acadêmico</a>
+                    <a href="/login">Visitante</a>
+                    <a href="/login">Cantina</a>
+                </ContentCategories>
             </Content>
+            <Background />
         </Container>
     )
 }
