@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import background from '../../assets/ifsplogo.jpg'
+import background from '../../assets/ifsplogo.jpg';
+import { shade } from 'polished';
 
 export const Container = styled.div`
     height: 100vh;
@@ -22,7 +23,9 @@ export const ContentCategories = styled.div`
     display: flex;
     flex-direction: column;
     padding: 20px;
+    width: 347px;
     align-items: center;
+    text-align: center;
     border-radius: 16px;
     height: 45vh;
 
@@ -38,11 +41,17 @@ export const ContentCategories = styled.div`
         color: #FFF;
         font-weight: 500;
         background-color: #25894d;
+        transition: background-color 0.3s;
         text-align: center;
 
         & + a {
             margin-top: 10px;
         }
+
+        &:hover {
+            background: ${shade(0.2, "#25894d")};
+        }
+        
     }
 `;
 

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import background from '../../assets/ifsplogo.jpg'
 import {shade} from 'polished';
 
 export const Container = styled.button`
@@ -15,6 +14,6 @@ export const Container = styled.button`
   transition: background-color 0.3s;
 
   &:hover {
-    background: ${shade(0.2, "#ff0000")};
+    background: ${shade(0.2, "#25894d")};
   }
 `;

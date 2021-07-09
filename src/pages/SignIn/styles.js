@@ -43,26 +43,26 @@ export const ContentLogin = styled.div`
       transition: color 0.2s;
 
       &:hover {
-        color: ${shade(0.2, "#F4EDE8")};
+        color: ${shade(0.2, "#25894d")};
       }
     }
   }
 
   > a {
     text-decoration: none;
-    color: #65191d;
+    color: #F4EDE8;
     display: block;
-    margin-top: 10px;
     transition: color 0.2s;
+    margin-bottom: 24px;
     display: flex;
     align-items: center;
 
     svg {
-      margin-right: 16px;
+      margin-right: 10px;
     }
 
     &:hover {
-      color: ${shade(0.2, "#65191d")};
+        color: ${shade(0.2, "#25894d")};
     }
   }
 `;

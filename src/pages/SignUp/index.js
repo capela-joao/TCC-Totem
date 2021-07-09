@@ -40,7 +40,6 @@ export default function SignUp() {
 
     return (
       <Container>
-        <Background />
         <Content>
           <ContentLogin>
             {/* <img src={Logo} alt="NewWorld" /> */}
@@ -62,12 +61,13 @@ export default function SignUp() {
               <Button type="submit">Cadastrar</Button>
             </Form>
 
-            <a href="cadastro">
+            <a href="/login">
               <FiArrowLeft />
               Voltar para o Login
             </a>
           </ContentLogin>
         </Content>
+        <Background />
       </Container>
     );
 }

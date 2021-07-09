@@ -1,6 +1,6 @@
 import React, { useRef, useCallback } from 'react';
 import { Container, Content, ContentLogin, Background } from './styles'
-import { FiMail, FiLock, FiLogIn } from 'react-icons/fi'
+import { FiUser, FiLock, FiArrowLeft } from 'react-icons/fi'
 import Input from '../../components/input'
 import Button from '../../components/button'
 import { Form } from '@unform/web';
@@ -8,7 +8,7 @@ import * as Yup from 'yup';
 import getValidationErrors from "../../utils/getValidationErrors";
 // import Logo from "../../assets/nw-logo-white.png";
 
-export default function SignIn() {
+export default function SignInAcad() {
     const formRef = useRef(null);
 
     console.log(formRef);
@@ -18,10 +18,8 @@ export default function SignIn() {
 
       try {
         const schema = Yup.object().shape({
-          name: Yup.string().required("Nome obrigatório"),
-          email: Yup.string()
-            .required("E-mail obrigatório")
-            .email("Digite um e-mail válido"),
+          prontuario: Yup.string()
+            .required("Prontuário obrigatório"),
           password: Yup.string().required("Senha obrigatória"),
         });
 
@@ -42,11 +40,10 @@ export default function SignIn() {
         <Content>
           <ContentLogin>
             {/* <img src={Logo} alt="NewWorld" /> */}
-
             <Form ref={formRef} onSubmit={handleSubmit}>
               <h1>Faça seu Login</h1>
 
-              <Input name="email" icon={FiMail} placeholder="E-mail" />
+              <Input name="prontuario" icon={FiUser} placeholder="Prontuário" />
 
               <Input
                 name="password"
@@ -57,12 +54,11 @@ export default function SignIn() {
 
               <Button type="submit">Entrar</Button>
 
-              <a href="/">Esqueci minha senha</a>
+              <a href="/login-academy">Esqueci minha senha</a>
             </Form>
-
-            <a href="/cadastro">
-              <FiLogIn />
-              Cadastre-se
+            <a href="/">
+              <FiArrowLeft />
+              Voltar para categoria
             </a>
           </ContentLogin>
         </Content>

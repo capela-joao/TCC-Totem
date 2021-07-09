@@ -47,7 +47,6 @@ export const ContentLogin = styled.div`
       }
     }
   }
-
   > a {
     text-decoration: none;
     color: #f4ede8;
