@@ -27,7 +27,6 @@ export const ContentCategories = styled.div`
     align-items: center;
     text-align: center;
     border-radius: 16px;
-    height: 45vh;
 
     h1 {
         margin: 50px 0 50px 0;
